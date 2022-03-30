@@ -1,0 +1,47 @@
+#function
+	display: grid
+	grid-template-columns: 2fr 1fr
+	grid-gap: 80px
+	justify-items: center
+	position: relative
+
+	form
+		position: relative
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+
+		@include pseudo-element('before')
+			content: ''
+
+			@media(max-width: 1200px)
+				height: 200px
+
+		div
+			display: flex
+			align-items: center
+			justify-content: space-between
+			align-items: center
+			width: 70%
+
+		button
+			@include mix-input(#F39C12, white)
+			margin-right: 0
+		
+	.txtInput
+			@include mix-input
+
+	#search
+		position: relative
+		width: 100%
+
+		@include pseudo-element('before')
+				content: ''
+
+		input
+			@include mix-input($width: 95%)
+			
+		
+		

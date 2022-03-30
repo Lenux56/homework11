@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+main {
+  padding: 50px; }
+
+#function {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 80px;
+  justify-items: center;
+  position: relative; }
+  #function form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    #function form:before, #function form::before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      border: 2px solid black;
+      border-radius: 15px;
+      height: 100px;
+      top: -25px;
+      left: -25px;
+      padding-right: 50px;
+      z-index: -1; }
+@media(max-width: 1200px) {
+  #function form:before, #function form::before {
+    height: 200px; } }
+    #function form div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%; }
+    #function form button {
+      background-color: #F39C12;
+      color: white;
+      width: 150px;
+      height: 50px;
+      border-radius: 25px;
+      padding: 0 2%;
+      margin-right: 2%;
+      cursor: pointer;
+      border-color: transparent;
+      margin-right: 0; }
+      #function form button:hover {
+        outline: none;
+        border-color: #a52a2a; }
+      #function form button:active {
+        outline: none;
+        border-color: #a52a2a; }
+      #function form button:focus {
+        outline: none;
+        border-color: #a52a2a; }
+  #function .txtInput {
+    background-color: #EBEBEB;
+    color: black;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 2%;
+    margin-right: 2%;
+    cursor: pointer;
+    border-color: transparent; }
+    #function .txtInput:hover {
+      outline: none;
+      border-color: #a52a2a; }
+    #function .txtInput:active {
+      outline: none;
+      border-color: #a52a2a; }
+    #function .txtInput:focus {
+      outline: none;
+      border-color: #a52a2a; }
+  #function #search {
+    position: relative;
+    width: 100%; }
+    #function #search:before, #function #search::before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      border: 2px solid black;
+      border-radius: 15px;
+      height: 100px;
+      top: -25px;
+      left: -25px;
+      padding-right: 50px;
+      z-index: -1; }
+    #function #search input {
+      background-color: #EBEBEB;
+      color: black;
+      width: 95%;
+      height: 50px;
+      border-radius: 25px;
+      padding: 0 2%;
+      margin-right: 2%;
+      cursor: pointer;
+      border-color: transparent; }
+      #function #search input:hover {
+        outline: none;
+        border-color: #a52a2a; }
+      #function #search input:active {
+        outline: none;
+        border-color: #a52a2a; }
+      #function #search input:focus {
+        outline: none;
+        border-color: #a52a2a; }
+
+#blocks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px; }
+  #blocks .card {
+    background-color: #EBEBEB;
+    color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    margin: 10px;
+    position: relative; }
+    #blocks .card .cross {
+      width: 20px;
+      height: 20px;
+      border: 1px solid black;
+      background-color: white;
+      border-radius: 11px;
+      position: absolute;
+      right: -9px;
+      top: -9px;
+      cursor: pointer; }
+      #blocks .card .cross::before {
+        content: "✖";
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+/*# sourceMappingURL=style.css.map */
